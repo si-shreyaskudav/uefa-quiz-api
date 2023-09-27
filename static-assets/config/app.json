@@ -1,0 +1,808 @@
+﻿{
+  "Data": {
+    "Value": {
+      "BASE_URL_ROOT": "https://gaming.uefa.com",
+      "BASE_URL": "https://gaming.uefa.com/en/uclfantasy/services/api",
+      "FEED_BASE_URL": "https://gaming.uefa.com/en/uclfantasy/services/feeds/",
+      "transUrl": "translations/translations_20_{{platformId}}_{{lang}}.json",
+      "fixturesUrl": "fixtures/fixtures_20_{{lang}}_{{matchdayId}}.json",
+      "teamsUrl": "teams/teams_20_{{lang}}.json",
+      "everyteamsUrl": "teams/every_teams_20_{{lang}}.json",
+      "countryUrl": "countries/countries_20.json",
+      "playerUrl": "players/players_20_{{lang}}_{{gamedayId}}.json",
+      "dreamTeamUrl": "dreamteam/dreamteam_20_{{lang}}_{{gamedayId}}.json",
+      "playerRecomUrl": "players/recommendation_20.json",
+      "compositionUrl": "compositions/compositions_20.json",
+      "gamedaycompositionUrl": "compositions/compositions_20_{{gamedayId}}.json",
+      "constraintsUrl": "constraints/constraints_20.json",
+      "popupstatsUrl": "popupstats/popupstats_20_{{playerId}}.json",
+      "liveUrl": "scoring/live-scores_20.json",
+      "badgesUrl": "badges/badges_20.json",
+      "SERVICE_URL": "/uclfantasy/services/api",
+      "HELP_URL": "https://helpcenter.uefa.com/hc/{{lang}}/sections/115001652769-Fantasy",
+      "END_POINT_PLAYER_IMAGE": "https://img.uefa.com/imgml/TP/players/1/2019/324x324/",
+      "END_POINT_TEAM_IMAGE": "https://img.uefa.com/imgml/TP/teams/logos/140x140/",
+      "PLAYER_JERSEY_IMAGE": "https://gaming.uefa.com/{{lang}}/uclfantasy/static-assets/images/player-jersey/{{TID}}.png",
+      "END_POINT_BADGES_IMAGE_BASE": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/badges/{{badgeId}}.png",
+      "AD_BANNER_URL": "https://gaming.uefa.com/en/uclfantasy/static-assets/add-banners/index-{{lang}}.html",
+      "flagURL": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/flags/{{flag_id}}.png",
+      "PLATFORM_ID_IOS": 2,
+      "PLATFORM_ID_ANDROID": 3,
+      "PRecommendationSlice": 20,
+      "priceFilter": [
+        {
+          "id": 0,
+          "label": "Unlimited",
+          "min": 0,
+          "max": 105,
+          "selected": false,
+          "labelTrans": "Unlimited"
+        },
+        {
+          "id": 1,
+          "label": "Affordable",
+          "min": 0,
+          "max": 105,
+          "selected": false,
+          "labelTrans": "Affordable"
+        },
+        {
+          "id": 2,
+          "label": "13",
+          "min": 0,
+          "max": 13,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "12.5",
+          "min": 0,
+          "max": 12.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "12",
+          "min": 0,
+          "max": 12,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "11.5",
+          "min": 0,
+          "max": 11.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "11",
+          "min": 0,
+          "max": 11,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "10.5",
+          "min": 0,
+          "max": 10.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "10",
+          "min": 0,
+          "max": 10,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "9.5",
+          "min": 0,
+          "max": 9.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "9",
+          "min": 0,
+          "max": 9,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "8.5",
+          "min": 0,
+          "max": 8.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "8",
+          "min": 0,
+          "max": 8,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "7.5",
+          "min": 0,
+          "max": 7.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "7",
+          "min": 0,
+          "max": 7,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "6.5",
+          "min": 0,
+          "max": 6.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "6",
+          "min": 0,
+          "max": 6,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "5.5",
+          "min": 0,
+          "max": 5.5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "5",
+          "min": 0,
+          "max": 5,
+          "selected": false
+        },
+        {
+          "id": 3,
+          "label": "4.5",
+          "min": 0,
+          "max": 4.5,
+          "selected": false
+        }
+      ],
+      "headers": {
+        "entity": "ed0t4n$3!",
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "rules": {
+        "en": "https://www.uefa.com/news/newsid=2396425.html",
+        "es": "https://www.uefa.com/news/newsid=2396430.html",
+        "fr": "https://www.uefa.com/news/newsid=2396426.html",
+        "de": "https://www.uefa.com/news/newsid=2396431.html",
+        "it": "https://www.uefa.com/news/newsid=2396427.html",
+        "pt": "https://www.uefa.com/news/newsid=2396428.html",
+        "ru": "https://www.uefa.com/news/newsid=2396429.html"
+      },
+      "adbanner": {
+        "en": "/5874/ucl.english/exclusive_playstation_fantasy",
+        "es": "/5874/ucl.spanish/exclusive_playstation_fantasy",
+        "fr": "/5874/ucl.french/exclusive_playstation_fantasy",
+        "de": "/5874/ucl.german/exclusive_playstation_fantasy",
+        "it": "/5874/ucl.italian/exclusive_playstation_fantasy",
+        "pt": "/5874/ucl.portuguese/exclusive_playstation_fantasy",
+        "ru": "/5874/ucl.russian/exclusive_playstation_fantasy"
+      },
+      "prizes": {
+        "en": "https://www.uefa.com/news/newsid=2568611.html",
+        "es": "https://www.uefa.com/news/newsid=2568628.html",
+        "fr": "https://www.uefa.com/news/newsid=2568649.html",
+        "de": "https://www.uefa.com/news/newsid=2568626.html",
+        "it": "https://www.uefa.com/news/newsid=2568675.html",
+        "pt": "https://www.uefa.com/news/newsid=2568630.html",
+        "ru": "https://www.uefa.com/news/newsid=2568625.html"
+      },
+      "ENVIRONMENT": "prod",
+      "statsKeys": [
+        "OF",
+        "CS",
+        "GA",
+        "GC",
+        "GS",
+        "OG",
+        "PC",
+        "PE",
+        "PM",
+        "PS",
+        "RC",
+        "SS",
+        "YC"
+      ],
+      "gameId": "uclfantasy",
+      "totalSteps": 19,
+      "deepLinkPathArr": 5,
+      "OffSet": "+2",
+      "deepLinkUrl": {
+        "challenges": {
+          "pathName": "challenges"
+        }
+      },
+      "MIXED_API_INTERVAL_START_TIME": 5,
+      "MIXED_API_INTERVAL_DURATION": 30,
+      "MIXED_API_BEFORE_INTERVAL_DURATION": 60,
+      "DREAM_TEAM_URL": "https://gaming.uefa.com/{{gamdayId}}",
+      "DREAM_TEAM_IMG": "https://gaming.uefa.com/en/uclfantasy/static-assets/dreamteam/round{{gamedayId}}.jpg",
+      "hideShare": true,
+      "uefaCardBackground": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/cards/{{backgroundType}}.jpg?v=4",
+      "tutorialCarousel": {
+        "android": [
+          {
+            "uri": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/appimages/tutorialscreen/FantasyFootballTutorialScreen1.png?v=1",
+            "heading": "tutorial1Heading",
+            "subHeading1": "tutorial1SubHeading1",
+            "subHeading2": "tutorial1SubHeading2",
+            "showLink": true,
+            "linkText": "tutorial1linkText"
+          },
+          {
+            "uri": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/appimages/tutorialscreen/FantasyFootballTutorialScreen2.png?v=1",
+            "heading": "tutorial2Heading",
+            "subHeading1": "tutorial2SubHeading1",
+            "showLink": false,
+            "linkText": ""
+          },
+          {
+            "uri": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/appimages/tutorialscreen/FantasyFootballTutorialScreen3.png?v=2",
+            "heading": "tutorial3Heading",
+            "subHeading1": "tutorial3SubHeading1",
+            "showLink": false,
+            "linkText": ""
+          }
+        ],
+        "ios": [
+          {
+            "uri": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/appimages/tutorialscreen/FantasyFootballTutorialScreen1.png?v=1",
+            "heading": "tutorial1Heading",
+            "subHeading1": "tutorial1SubHeading1",
+            "subHeading2": "tutorial1SubHeading2",
+            "showLink": true,
+            "linkText": "tutorial1linkText"
+          },
+          {
+            "uri": "https://gaming.uefa.com/en/uclfantasy/static-assets/images/appimages/tutorialscreen/FantasyFootballTutorialScreen2.png?v=1",
+            "heading": "tutorial2Heading",
+            "subHeading1": "tutorial2SubHeading1",
+            "showLink": false,
+            "linkText": ""
+          }
+        ]
+      },
+      "trackingKeys": {
+        "Sort By": {
+          "TotPts": "Total points",
+          "lastGdPoints": "Matchweek Points",
+          "Value": "Price",
+          "SelPer": "Selected by %",
+          "AvgPlayerPts": "Average points",
+          "AvgPlayerValue": "Average value",
+          "GS": "Goals scored",
+          "Assist": "Assists",
+          "CS": "Clean sheets"
+        },
+        "Price": {
+          "5": "€5m",
+          "6": "€6m",
+          "7": "€7m",
+          "8": "€8m",
+          "9": "€9m",
+          "10": "€10m",
+          "11": "€11m",
+          "12": "€12m",
+          "13": "€13m",
+          "Unlimited": "Unlimited",
+          "Affordable": "Affordable",
+          "12.5": "€12.5m",
+          "11.5": "€11.5m",
+          "10.5": "€10.5m",
+          "9.5": "€9.5m",
+          "8.5": "€8.5m",
+          "7.5": "€7.5m",
+          "6.5": "€6.5m",
+          "5.5": "€5.5m",
+          "4.5": "€4.5m"
+        },
+        "Recommendation PlayerList": {
+          "Category1": "Predicted top scorers",
+          "Category2": "Last season's top scorers",
+          "Category3": "Most picked as captain",
+          "Category4": "Most picked",
+          "Category5": "Most Transferred in last 24hrs",
+          "Category6": "",
+          "Category7": "",
+          "Category8": "",
+          "Category9": "",
+          "Category10": "",
+          "Category11": "",
+          "Category12": "",
+          "Category13": "",
+          "Category14": "",
+          "Category15": ""
+        }
+      },
+      "cardConstants": {
+        "card-create-team": {
+          "id": "-",
+          "name": "Fantasy Football - Create Team",
+          "category": "uclfantasy"
+        },
+        "card-manage-team": {
+          "id": "-",
+          "name": "Fantasy Football - Manage Team",
+          "category": "uclfantasy"
+        },
+        "card-players-in-play": {
+          "id": "-",
+          "name": "Fantasy Football - Players in play    ",
+          "category": "uclfantasy"
+        },
+        "card-substitutions": {
+          "id": "-",
+          "name": "Fantasy Football - Substitutions",
+          "category": "uclfantasy"
+        },
+        "card-top-performer": {
+          "id": "-",
+          "name": "Fantasy Football - Top Performer",
+          "category": "uclfantasy"
+        },
+        "card-points-status": {
+          "id": "-",
+          "name": "Fantasy Football - Points Status",
+          "category": "uclfantasy"
+        },
+        "card-leagues": {
+          "id": "-",
+          "name": "Fantasy Football - Leagues",
+          "category": "uclfantasy"
+        },
+        "card-points": {
+          "id": "-",
+          "name": "Fantasy Football - Points",
+          "category": "uclfantasy"
+        },
+        "card-article": {
+          "id": "-",
+          "name": "Fantasy Football - Article",
+          "category": "uclfantasy"
+        }
+      },
+      "trackConstant": {
+        "/prizes": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy",
+          "content_section_3": "prizes",
+          "pageTitle": "UCL Classic Fantasy - Prizes",
+          "page_type": "game prizes",
+          "pageName": "/uclfantasy/prizes/",
+          "page_format": "standard view"
+        },
+        "/rules": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy",
+          "content_section_3": "rules",
+          "pageTitle": "UCL Classic Fantasy - Rules",
+          "page_type": "game rules",
+          "pageName": "/uclfantasy/rules/",
+          "page_format": "standard view"
+        },
+        "/help": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy",
+          "content_section_3": "help",
+          "pageTitle": "UCL Classic Fantasy - Help",
+          "page_type": "help",
+          "pageName": "/uclfantasy/help/",
+          "page_format": "standard view"
+        },
+        "/splash-screen": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy",
+          "content_section_3": "splash",
+          "pageTitle": "UCL Classic Fantasy - Splash Screen",
+          "page_type": "splash",
+          "pageName": "/uclfantasy/splash-screen/",
+          "page_format": "standard view"
+        },
+        "/tutorial-first-screen": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "first time tutorial",
+          "content_section_3": "tutorial",
+          "pageTitle": "UCL Classic Fantasy - Tutorial",
+          "page_type": "tutorial",
+          "pageName": "/uclfantasy/tutorial/1/",
+          "page_format": "standard view"
+        },
+        "/tutorial-second-screen": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "first time tutorial",
+          "content_section_3": "tutorial",
+          "pageTitle": "UCL Classic Fantasy - Tutorial",
+          "page_type": "tutorial",
+          "pageName": "/uclfantasy/tutorial/2/",
+          "page_format": "standard view"
+        },
+        "/tutorial-third-screen": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "first time tutorial",
+          "content_section_3": "tutorial",
+          "pageTitle": "UCL Classic Fantasy - Tutorial",
+          "page_type": "tutorial",
+          "pageName": "/uclfantasy/tutorial/3/",
+          "page_format": "standard view"
+        },
+        "/global-rank": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy global overall",
+          "content_section_3": "global rank leagues",
+          "pageTitle": "UCL Classic Fantasy - global rank",
+          "page_type": "leaderboard",
+          "pageName": "/uclfantasy/leagues/public/global-rank/",
+          "page_format": "standard view"
+        },
+        "/country-league": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy country",
+          "content_section_3": "global rank leagues",
+          "pageTitle": "UCL Classic Fantasy - country league",
+          "page_type": "leaderboard",
+          "pageName": "/uclfantasy/leagues/public/{{ReplaceParam}}/",
+          "page_format": "standard view"
+        },
+        "/club-league": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy country",
+          "content_section_3": "global rank leagues",
+          "pageTitle": "UCL Classic Fantasy - club league",
+          "page_type": "leaderboard",
+          "pageName": "/uclfantasy/leagues/public/{{ReplaceParam}}/",
+          "page_format": "standard view"
+        },
+        "/leagues": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy leagues",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - Leagues",
+          "page_type": "list",
+          "pageName": "/uclfantasy/leagues/",
+          "page_format": "standard view"
+        },
+        "/leagues-not-login": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy leagues",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - Leagues not login",
+          "page_type": "locked state",
+          "pageName": "/uclfantasy/leagues/locked/",
+          "page_format": "standard view"
+        },
+        "/league-empty": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy leagues",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - League empty",
+          "page_type": "empty state",
+          "pageName": "/uclfantasy/leagues/empty/",
+          "page_format": "standard view"
+        },
+        "/league-detail-empty": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy empty league",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - League detail empty",
+          "page_type": "empty state",
+          "pageName": "/uclfantasy/leagues/private/empty/",
+          "page_format": "standard view"
+        },
+        "/league-detail-active": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy league",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - League detail active",
+          "page_type": "leaderboard",
+          "pageName": "/uclfantasy/leagues/private/",
+          "page_format": "standard view"
+        },
+        "/League-invite-layer": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy league invite",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - League invite layer",
+          "page_type": "share",
+          "pageName": "/uclfantasy/leagues/private/invite/",
+          "page_format": "instant view"
+        },
+        "/league-settings": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy league",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - League Settings",
+          "page_type": "settings",
+          "pageName": "/uclfantasy/leagues/private/settings/",
+          "page_format": "standard view"
+        },
+        "/league-settings-edit": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy league edit",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - League Settings edit",
+          "page_type": "settings",
+          "pageName": "/uclfantasy/leagues/private/settings/edit/",
+          "page_format": "standard view"
+        },
+        "/create-league": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - Create Leagues",
+          "page_type": "create league",
+          "pageName": "/uclfantasy/leagues/private/create/",
+          "page_format": "standard view"
+        },
+        "/join-league-layer": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "content_section_3": "Leagues",
+          "pageName": "/uclfantasy/leagues/private/join/",
+          "page_type": "join league",
+          "page_sub_type": "fantasy",
+          "page_format": "instant view",
+          "pageTitle": "UCL Classic Fantasy - Join league layer"
+        },
+        "/view-others-team": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "fantasy others team view",
+          "content_section_3": "leagues",
+          "pageTitle": "UCL Classic Fantasy - Create Leagues",
+          "page_type": "fantasy team",
+          "pageName": "/uclfantasy/leagues/others-team/",
+          "page_format": "standard view"
+        },
+        "/fantasy-editorial-all-articles": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy news",
+          "content_section_3": "news",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Editorial - all articles",
+          "page_type": "hub",
+          "pageName": "/uclfantasy/stories/news/",
+          "page_format": "standard view"
+        },
+        "/fantasy-editorial-article": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy",
+          "content_section_3": "news",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Editorial articles",
+          "page_type": "article",
+          "pageName": "/uclfantasy/stories/news/{{articleId}}",
+          "page_format": "standard view"
+        },
+        "/fantasy-onboarding-create-team": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy player selection",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Create Team",
+          "page_type": "game entry",
+          "pageName": "/uclfantasy/create-team/",
+          "page_format": "standard view"
+        },
+        "/fantasy-onboarding-team-name": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy enter team name",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - team name",
+          "page_type": "game entry",
+          "pageName": "/uclfantasy/team-name/",
+          "page_format": "standard view"
+        },
+        "/fantasy-onboarding-save-team": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy team summary",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - save team",
+          "page_type": "game entry",
+          "pageName": "/uclfantasy/save-team/",
+          "page_format": "standard view"
+        },
+        "/Fantasy-overview": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy overview",
+          "page_type": "hub",
+          "pageName": "/uclfantasy/home/",
+          "page_format": "standard view"
+        },
+        "/Fantasy-My-team": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "manage my team",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - My team (transfers or subs mode)",
+          "page_type": "fantasy team",
+          "pageName": "/uclfantasy/my-team/manage/",
+          "page_format": "standard view"
+        },
+        "/Fantasy-My-team-locked": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "my team locked",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - My team locked (during live)",
+          "page_type": "fantasy team",
+          "pageName": "/uclfantasy/my-team/view/",
+          "page_format": "standard view"
+        },
+        "/fantasy-transfers-mode": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy transfer mode",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Transfers mode",
+          "page_type": "game entry",
+          "pageName": "/uclfantasy/my-team/transfers/",
+          "page_format": "standard view"
+        },
+        "/fantasy-transfers-mode-summary": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy transfers summary",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Transfers mode summary",
+          "page_type": "game entry",
+          "pageName": "/uclfantasy/my-team/transfers/",
+          "page_format": "standard view"
+        },
+        "/fantasy-substitutions-mode": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy substitutions mode",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Substitutions mode",
+          "page_type": "game entry",
+          "pageName": "/uclfantasy/my-team/substitutions/",
+          "page_format": "standard view"
+        },
+        "/fantasy-player-detail-layer": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy player",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Player detail layer",
+          "page_type": "player detail",
+          "pageName": "/uclfantasy/player-detail/",
+          "page_format": "instant view"
+        },
+        "/fantasy-upcoming-fixtures-layer": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy match calendar",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Upcoming fixtures layer",
+          "page_type": "match listing",
+          "pageName": "/uclfantasy/upcoming-fixtures/",
+          "page_format": "instant view"
+        },
+        "/fantasy-matches": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy match calendar",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Matches",
+          "page_type": "match listing",
+          "pageName": "/uclfantasy/matches/",
+          "page_format": "standard view"
+        },
+        "/fantasy-game-settings": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "uclfantasy team name edit",
+          "content_section_3": "",
+          "pageTitle": "UCL Classic Fantasy - Fantasy - Game settings",
+          "page_type": "settings",
+          "pageName": "/uclfantasy/settings/",
+          "page_format": "standard view"
+        },
+        "/achievements": {
+          "event": "Page Meta",
+          "content_section_1": "gaminghub",
+          "content_section_2": "uclfantasy",
+          "page_sub_type": "",
+          "content_section_3": "achievements",
+          "pageTitle": "UCL Classic Fantasy - Achievements",
+          "page_type": "achievements",
+          "pageName": "/uclfantasy/achievements/",
+          "page_format": "standard view"
+        }
+      }
+    },
+    "FeedTime": {
+      "UTCTime": "8/6/2019 12:59:54 PM",
+      "ISTTime": "8/6/2019 6:29:54 PM",
+      "CESTTime": "8/6/2019 2:59:54 PM"
+    }
+  },
+  "Meta": {
+    "Message": "S3",
+    "RetVal": 1,
+    "Success": true,
+    "Timestamp": {
+      "UTCTime": "8/6/2019 12:59:54 PM",
+      "ISTTime": "8/6/2019 6:29:54 PM",
+      "CESTTime": "8/6/2019 2:59:54 PM"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+﻿
+@model Gaming.Quiz.Admin.Models.FeedIngestionModel 
+
+<form id="feedIngestionForm"  action="@String.Concat(ViewBag.BasePath, "Feed")"  method="post">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">FEED INGESTION</h4>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("Message", new { component = ViewBag?.MessageType, message = ViewBag?.MessageText })
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <div class="dataTables_wrapper form-inline" role="grid">
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Input</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">Languages</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="languages">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Month </td>
+                                            <td class="text-center">
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="monthingest">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Gamedays </td>
+                                            <td class="text-center">
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="gamedayingest">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Week </td>
+                                            <td class="text-center">
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="weekingest">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Fav Players </td>
+                                            <td class="text-center">
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="favplayeringest">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Badges </td>
+                                            <td class="text-center">
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="badgeingest">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Best Socre Leaderbaord</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="BSGamedayId" placeholder="*GamedayId" class="form-control" />
+                                                <input type="text" asp-for="BSWeekId" placeholder="*WeekId" class="form-control" />
+                                                <input type="text" asp-for="BSMonthId" placeholder="*MonthId" class="form-control" />
+
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="bestscoreleaderboard">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Player Leaderboard</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="PlayerId" placeholder="PlayerId" class="form-control" />
+                                                <input type="text" asp-for="PlrGamedayId" placeholder="*GamedayId" class="form-control" />
+                                                <input type="text" asp-for="PlrWeekId" placeholder="*WeekId" class="form-control" />
+                                                
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="playerleaderboard">Ingest</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Monthly Leaderboard</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="OVGamedayId" placeholder="*GamedayId" class="form-control" />
+                                                <input type="text" asp-for="OVWeekId" placeholder="*WeekId" class="form-control" />
+                                                <input type="text" asp-for="OVMonthId" placeholder="*MonthId" class="form-control" />
+
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="monthleaderboard">Ingest</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center">Overall Leaderboard</td>
+                                            <td class="text-center">
+                                                
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="overallleaderboard">Ingest</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

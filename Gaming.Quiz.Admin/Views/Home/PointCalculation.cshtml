@@ -1,0 +1,79 @@
+﻿@model Gaming.Quiz.Admin.Models.PointCalculationModel
+@{
+    ViewData["Title"] = "PointCalculation";
+}
+
+<form id="pointCalculationForm" action="@String.Concat(ViewBag.BasePath, "PointCalculation")" method="post">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">Point Calculation</h4>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("Message", new { component = ViewBag?.MessageType, message = ViewBag?.MessageText })
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <div class="dataTables_wrapper form-inline" role="grid">
+
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Input</th>
+                                            <th class="text-center">Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">User Point Process</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="MonthId" placeholder="*MonthId" class="form-control" />
+                                                <input type="text" asp-for="WeekId" placeholder="*WeekId" class="form-control" />
+                                                <input type="text" asp-for="GamedayId" placeholder="*GamedayId" class="form-control" />
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="userpointprocess">Process</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">User Best Score Update</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="UserId" placeholder="*UserId" class="form-control" />
+                                                <input type="text" asp-for="BsMonthId" placeholder="*MonthId" class="form-control" />
+                                                <input type="text" asp-for="BsWeekId" placeholder="*WeekId" class="form-control" />
+                                                <input type="text" asp-for="BsGamedayId" placeholder="*GamedayId" class="form-control" />
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="userbestscoreupd">Update</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center">EOD Settlement</td>
+                                            <td class="text-center">
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="usersettlemeneodprocess">Process</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</form>
+

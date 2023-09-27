@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/cmo.scss"],"names":[],"mappings":"AAIE;EACE","file":"cmo.css","sourcesContent":["@import '../_variables';\r\n@import '../_mixins';\r\n\r\n.si-cmo {\r\n  &__wrap {\r\n    padding-bottom: 20px;\r\n  }\r\n}"]}

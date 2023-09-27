@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.Web", "Gaming.Quiz.Web\Gaming.Quiz.Web.csproj", "{16CCBF24-7BCB-489F-A1EC-092FE026814A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.Library", "Gaming.Quiz.Library\Gaming.Quiz.Library.csproj", "{32DD290E-3228-46F3-B9D2-57A596948198}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.Interfaces", "Gaming.Quiz.Interfaces\Gaming.Quiz.Interfaces.csproj", "{31BA4341-90E0-4BAB-8BEF-91168BA3F7A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.Contracts", "Gaming.Quiz.Contracts\Gaming.Quiz.Contracts.csproj", "{AE216EEB-B560-4519-AC30-19EB2B0A5D09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.DataAccess", "Gaming.Quiz.DataAccess\Gaming.Quiz.DataAccess.csproj", "{6C41EA36-51B6-45A8-B12A-20321CBB0A14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.DataInitializer", "Gaming.Quiz.DataInitializer\Gaming.Quiz.DataInitializer.csproj", "{F3A77B8B-7DFB-443C-BFC2-AE742D4D2719}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.Blanket", "Gaming.Quiz.Blanket\Gaming.Quiz.Blanket.csproj", "{91E6B00B-371B-4530-8C40-9A690FFDC79E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.API", "Gaming.Quiz.API\Gaming.Quiz.API.csproj", "{8C315604-7C6C-4D3A-83E8-EE21F43C5796}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.Admin", "Gaming.Quiz.Admin\Gaming.Quiz.Admin.csproj", "{672E3A1E-1C5C-4E93-88E7-6F3963D4BADE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deamons", "Deamons", "{B6348D20-ACB1-4835-95A8-DD99D169C81A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.BGServices", "Daemons\Gaming.Quiz.BGServices\Gaming.Quiz.BGServices.csproj", "{F2229FFE-C77B-4547-ACB6-26E6257F7585}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16CCBF24-7BCB-489F-A1EC-092FE026814A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CCBF24-7BCB-489F-A1EC-092FE026814A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CCBF24-7BCB-489F-A1EC-092FE026814A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CCBF24-7BCB-489F-A1EC-092FE026814A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32DD290E-3228-46F3-B9D2-57A596948198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DD290E-3228-46F3-B9D2-57A596948198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DD290E-3228-46F3-B9D2-57A596948198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DD290E-3228-46F3-B9D2-57A596948198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BA4341-90E0-4BAB-8BEF-91168BA3F7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BA4341-90E0-4BAB-8BEF-91168BA3F7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BA4341-90E0-4BAB-8BEF-91168BA3F7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BA4341-90E0-4BAB-8BEF-91168BA3F7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE216EEB-B560-4519-AC30-19EB2B0A5D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE216EEB-B560-4519-AC30-19EB2B0A5D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE216EEB-B560-4519-AC30-19EB2B0A5D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE216EEB-B560-4519-AC30-19EB2B0A5D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C41EA36-51B6-45A8-B12A-20321CBB0A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C41EA36-51B6-45A8-B12A-20321CBB0A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C41EA36-51B6-45A8-B12A-20321CBB0A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C41EA36-51B6-45A8-B12A-20321CBB0A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A77B8B-7DFB-443C-BFC2-AE742D4D2719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A77B8B-7DFB-443C-BFC2-AE742D4D2719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A77B8B-7DFB-443C-BFC2-AE742D4D2719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A77B8B-7DFB-443C-BFC2-AE742D4D2719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E6B00B-371B-4530-8C40-9A690FFDC79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E6B00B-371B-4530-8C40-9A690FFDC79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E6B00B-371B-4530-8C40-9A690FFDC79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E6B00B-371B-4530-8C40-9A690FFDC79E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C315604-7C6C-4D3A-83E8-EE21F43C5796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C315604-7C6C-4D3A-83E8-EE21F43C5796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C315604-7C6C-4D3A-83E8-EE21F43C5796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C315604-7C6C-4D3A-83E8-EE21F43C5796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{672E3A1E-1C5C-4E93-88E7-6F3963D4BADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672E3A1E-1C5C-4E93-88E7-6F3963D4BADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672E3A1E-1C5C-4E93-88E7-6F3963D4BADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672E3A1E-1C5C-4E93-88E7-6F3963D4BADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2229FFE-C77B-4547-ACB6-26E6257F7585} = {B6348D20-ACB1-4835-95A8-DD99D169C81A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {761AC72B-B012-43AD-B04B-44EB4DC5303A}
+	EndGlobalSection
+EndGlobal

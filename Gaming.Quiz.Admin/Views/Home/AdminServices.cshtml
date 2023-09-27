@@ -1,0 +1,202 @@
+﻿
+@model Gaming.Quiz.Admin.Models.ServicesModel
+
+<form id="adminServicesForm" action="@String.Concat(ViewBag.BasePath, "AdminServices")" method="post">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">Admin Services</h4>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("Message", new { component = ViewBag?.MessageType, message = ViewBag?.MessageText })
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <div class="dataTables_wrapper form-inline" role="grid">
+
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Input</th>
+                                            <th class="text-center">Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">Admin Lifeline Get</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="adQMid" placeholder="*MasterId" class="form-control" />
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="adminllget">Process</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Quiz Mapping Process</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="QzMapDate" placeholder="*Date (YYYYMMDD)" class="form-control" />
+                                                <input type="text" asp-for="QzMappMId" placeholder="*Quiz MasterId" class="form-control" />
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="quizmapping">Process</button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-center">Gameday Details Get</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="GDDetMId" placeholder="*MasterId" class="form-control" />
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="gddetailsget">Process</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Monthly Details Get</td>
+                                            <td class="text-center">
+                                                <input type="text" asp-for="MnthDetMId" placeholder="*MasterId" class="form-control" />
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info " name="process" value="monthdetailsget">Process</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Check Mailing Service</td>
+                                            <td class="text-center"></td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="checkmail">Trigger</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+
+
+            @if (Model.adminLL != null)
+            {
+                @if (Model.adminLL.Count > 0)
+                {
+                    <h2>Life Line details get</h2>
+                    <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Lifeline_MId</th>
+                                <th class="text-center">Qz_MId</th>
+                                <th class="text-center">Desc</th>
+                                <th class="text-center">Short_Desc</th>
+                                <th class="text-center">Is_Active</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model.adminLL)
+                            {
+                                <tr>
+                                    <td class="text-center">@row.vLifelineMid</td>
+                                    <td class="text-center">@row.vMid</td>
+                                    <td class="text-center">@row.vDesc</td>
+                                    <td class="text-center">@row.vShortDesc</td>
+                                    <td class="text-center">@row.vIsActive</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                }
+            }
+
+            @if (Model.gdDetails != null)
+            {
+                @if (Model.gdDetails.Count > 0)
+                {
+                    <h2>Gameday details get</h2>
+
+                    <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                        <thead>
+                            <tr>
+                                <th class="text-center">GameDay</th>
+                                <th class="text-center">GDNo</th>
+                                <th class="text-center">SrtDate</th>
+                                <th class="text-center">EndDate</th>
+                                <th class="text-center">Qst_Ready</th>
+                                <th class="text-center">Tot_Ctg</th>
+                                <th class="text-center">Tot_Sprt</th>
+                                <th class="text-center">Tot_Atmpt</th>
+                                <th class="text-center">Qst_Upd</th>
+                                <th class="text-center">Qst_Bnk</th>
+                                <th class="text-center">Qst_cnt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model.gdDetails)
+                            {
+                                <tr>
+                                    <td class="text-center">@row.vGameday</td>
+                                    <td class="text-center">@row.vGamedayNo</td>
+                                    <td class="text-center">@row.vStartDate</td>
+                                    <td class="text-center">@row.vEndDate</td>
+                                    <td class="text-center">@row.vQuestionReady</td>
+                                    <td class="text-center">@row.vTotCtg</td>
+                                    <td class="text-center">@row.vTotSports</td>
+                                    <td class="text-center">@row.vTotAttempt</td>
+                                    <td class="text-center">@row.vQUpdDate</td>
+                                    <td class="text-center">@row.vQBnkPrsnt</td>
+                                    <td class="text-center">@row.vQsnCnt</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                }
+            }
+
+            @if (Model.monthDetails != null)
+            {
+                @if (Model.monthDetails.Count > 0)
+                {
+                    <h2>Monthly details get</h2>
+
+                    <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Month_Id</th>
+                                <th class="text-center">MnthNo</th>
+                                <th class="text-center">MnSrtDate</th>
+                                <th class="text-center">MnEndDate</th>
+                                <th class="text-center">Is_Current</th>
+                                <th class="text-center">Is_Locked</th>
+                                <th class="text-center">Leaderbord_Show</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var row in Model.monthDetails)
+                            {
+                                <tr>
+                                    <td class="text-center">@row.vMonthId</td>
+                                    <td class="text-center">@row.vMonthNo</td>
+                                    <td class="text-center">@row.vMnStartDate</td>
+                                    <td class="text-center">@row.vMnEndDate</td>
+                                    <td class="text-center">@row.vIsCurrent</td>
+                                    <td class="text-center">@row.vIsLocked</td>
+                                    <td class="text-center">@row.vIsLeaderbordShow</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                }
+            }
+        </div>
+    </div>
+</form>

@@ -1,0 +1,42 @@
+﻿
+<script type="text/javascript">
+    $(document).ready(function () {
+
+            //disabling all cursor pointers on rows except the first on load
+            $("table[id='listTable'] td:not(:first-child").css("pointer-events", "none").css("opacity", "0.7");
+            //unchecking all checking on load
+            $("table[id='listTable'] input[type='checkbox']").prop("checked", false);
+
+            //caption checkbox change function
+            $("table[id='listTable'] #chkAll").change(function () {
+                var checked = $(this).prop("checked");
+
+                //checking all checkboxes in the table
+                $("table[id='listTable'] td input[type='checkbox']").prop("checked", checked);
+
+                //enabling/disabling all cursor pointers on rows based on checkbox state
+                var style = (checked) ? "" : "none";
+                var color = (checked) ? "" : "0.7";
+                $("table[id='listTable'] td input[type='checkbox']").closest('td').siblings().css("pointer-events", style).css("opacity", color);
+            });
+
+            //per row checkbox change
+            $("table[id='listTable'] td input[type='checkbox']").change(function () {
+                var checked = $(this).prop("checked");
+                var style = (checked) ? "" : "none";
+                var color = (checked) ? "" : "0.7";
+                $(this).closest('td').siblings().css("pointer-events", style).css("opacity", color);
+            });
+        });
+
+        submitAlert = function () {
+            var count = $("table[id='listTable']").find("td input[type='checkbox']:checked").length;
+
+            if (count == 0) {
+                alert("Please check the rows to update");
+                return false;
+            }
+            else
+                return confirm("This will submit to database?");
+        };
+</script>

@@ -1,0 +1,84 @@
+{
+  "bg": {
+    "imageUrl": "https://gaming-int.uefa.com/en/uclfantasy/services/feeds/share/template/image/bg.png"
+  },
+  "namebox": {
+    "imageUrl": "https://gaming-int.uefa.com/en/uclfantasy/services/feeds/share/template/image/namebox.png",
+    "imageWidth": 95.0,
+    "imageHeight": 25.0,
+    "offsetFromJerseyHemline": -15.0
+  },
+  "pointsbox": {
+    "imageUrl": "https://gaming-int.uefa.com/en/uclfantasy/services/feeds/share/template/image/pointsbox.png",
+    "imageWidth": 80.0,
+    "imageHeight": 25.0
+  },
+  "shadow": {
+    "imageUrl": "https://gaming-int.uefa.com/en/uclfantasy/services/feeds/share/template/image/shadow.png",
+    "imageWidth": 60.0,
+    "imageHeight": 20.0
+  },
+  "player": {
+    "imageUrl": "https://gaming-int.uefa.com/en/uclfantasy/static-assets/images/player-jersey/{0}.png",
+    "defaultUrl": "https://gaming-int.uefa.com/en/uclfantasy/static-assets/images/default_jersey@2x.png",
+    "imageWidth": 65.0,
+    "imageHeight": 60.0,
+    "goalkeeperYaxis": 420.0,
+    "gapsBetweenSkill": 18.0,
+    "gapsBetweenJersey": {
+      "Defender": 90.0,
+      "Midfield": 80.0,
+      "Forward": 75.0,
+      "Bench": 75.0
+    },
+    "myPoints": {
+      "goalkeeperYOffset": 45.0,
+      "gapsBetweenSkillOffset": -5.0
+    }
+  },
+  "teamTitle": {
+    "offsetFromTop": 15.0,
+    "offsetFromHorizontalLine": 25.0,
+    "pointsOffsetFromHorizontalLine": 15.0
+  },
+  "hashtag": {
+    "offsetFromRight": 40.0,
+    "offsetFromBottom": 20.0
+  },
+  "fonts": {
+    "path": "/usr/share/UEFA.UCL.Classic.API/wwwroot/share/fonts/",
+    "championsBold": "Champions-Bold.ttf",
+    "championsExtraBold": "Champions-ExtraBold.ttf",
+    "championsRegular": "Champions-Regular.ttf",
+    "robotoBold": "Roboto-Bold.ttf",
+    "robotoRegular": "Roboto-Regular.ttf",
+    "teamName": {
+      "size": 31.0,
+      "color": "#ffffff"
+    },
+    "matchdayText": {
+      "size": 18.0,
+      "color": "#ffffff"
+    },
+    "pointsValue": {
+      "size": 30.0,
+      "color": "#2caaff"
+    },
+    "pointsText": {
+      "size": 18.0,
+      "color": "#2caaff"
+    },
+    "playerName": {
+      "size": 13.0,
+      "color": "#ffffff"
+    },
+    "playerPoints": {
+      "size": 15.0,
+      "color": "#ffffff"
+    },
+    "hashtag": {
+      "size": 18.0,
+      "color": "#ffffff"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+﻿{
+   "output_extension": ".png",
+  "font_details":[  
+ 	{  
+         "entity":"Score",
+         "name":"YahooSans",
+         "size":"22",
+         "color":"#FF0080",
+		 "Red":255,
+         "Green":255,
+         "Blue":255,
+		 "xPos": 0,
+		 "yPos": 0,
+		 "height":0,
+		 "width":0
+      },
+	  {  
+         "entity":"second_name",
+         "name":"SourceSansPro-Bold",
+         "size":"22",
+         "color":"#ffffff",
+		 "Red":255,
+         "Green":255,
+         "Blue":255,
+		 "xPos": 0,
+		 "yPos": 0,
+		 "height":0,
+		 "width":0
+      }
+   ],
+ "ScoreCords": [
+    {
+      "entity": "Point",
+      "xPos": 115,
+      "yPos": 251,
+	  "xFNPos" :122,
+	  "yFNPos" :386,
+	  "xLNPos" :122,
+	  "yLNPos" :404,
+      "width": 91,
+      "height": 77
+    },
+	{
+      "entity": "CorrectAns",
+      "xPos": 340,
+      "yPos": 251,
+	  "xFNPos" :350,
+	  "yFNPos" :386,
+	  "xLNPos" :350,
+	  "yLNPos" :404,
+      "width": 91,
+      "height": 77
+    }
+  ],
+  "player": [
+    {
+      "entity": "score",
+      "font_style": YahooSans-Light",
+      "font_size": "24px",
+      "font_color": "#FF0080",
+	  "Red":255,
+        "Green":255,
+        "Blue":255
+    }
+  ]
+}

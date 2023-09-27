@@ -1,0 +1,178 @@
+{
+  "output_extension": ".jpg",
+  "base_image": {
+    "img_physical_path": "ImageSharing/Images/bg_1.jpg",
+    "img_extension": ".png"
+  },
+  "ball_overlay": {
+    "img_physical_path": "ImageSharing/Images/balls/{0}",
+    "img_extension": ".png"
+  },
+  "coordinates": [
+    {
+      "entity": "Message",
+      "xPos": 485,
+      "yPos": 179,
+      "width": 950,
+      "height": 76
+    },
+    {
+      "entity": "TotalPoints",
+      "xPos": 735,
+      "yPos": 333,
+      "width": 450,
+      "height": 126
+    },
+    {
+      "entity": "CorrectAnswer",
+      "xPos": 180,
+      "yPos": 705,
+      "width": 300,
+      "height": 101
+    },
+    {
+      "entity": "AnswerPoints",
+      "xPos": 1440,
+      "yPos": 706,
+      "width": 300,
+      "height": 101
+    },
+    {
+      "entity": "TimePoints",
+      "xPos": 180,
+      "yPos": 902,
+      "width": 300,
+      "height": 101
+    },
+    {
+      "entity": "StreakPoints",
+      "xPos": 1440,
+      "yPos": 902,
+      "width": 300,
+      "height": 101
+    },
+    {
+      "entity": "B1",
+      "xPos": 582,
+      "yPos": 507,
+      "width": 102,
+      "height": 102
+    },
+    {
+      "entity": "B2",
+      "xPos": 712,
+      "yPos": 507,
+      "width": 102,
+      "height": 102
+    },
+    {
+      "entity": "B3",
+      "xPos": 843,
+      "yPos": 507,
+      "width": 102,
+      "height": 102
+    },
+    {
+      "entity": "B4",
+      "xPos": 974,
+      "yPos": 507,
+      "width": 102,
+      "height": 102
+    },
+    {
+      "entity": "B5",
+      "xPos": 1105,
+      "yPos": 507,
+      "width": 102,
+      "height": 102
+    },
+    {
+      "entity": "B6",
+      "xPos": 1235,
+      "yPos": 507,
+      "width": 102,
+      "height": 102
+    }
+  ],
+  "font_details": [
+    {
+      "entity": "Message",
+      "name": "ImageSharing/Fonts/Romagna-Bold.ttf",
+      "size": "80",
+      "color": "#ffffff",
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "height": 76,
+      "Width": 800
+    },
+    {
+      "entity": "TotalPoints",
+      "name": "ImageSharing/Fonts/Romagna-Bold.ttf",
+      "size": "140",
+      "color": "#ffffff",
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "height": 217,
+      "Width": 126
+    },
+    {
+      "entity": "CorrectAnswer",
+      "name": "ImageSharing/Fonts/Romagna-Bold.ttf",
+      "size": "112",
+      "color": "#ffffff",
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "height": 158,
+      "Width": 101
+    },
+    {
+      "entity": "TimePoints",
+      "name": "ImageSharing/Fonts/Romagna-Bold.ttf",
+      "size": "112",
+      "color": "#ffffff",
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "height": 171,
+      "Width": 101
+    },
+    {
+      "entity": "StreakPoints",
+      "name": "ImageSharing/Fonts/Romagna-Bold.ttf",
+      "size": "112",
+      "color": "#ffffff",
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "height": 173,
+      "Width": 101
+    },
+    {
+      "entity": "AnswerPoints",
+      "name": "ImageSharing/Fonts/Romagna-Bold.ttf",
+      "size": "112",
+      "color": "#ffffff",
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "height": 162,
+      "Width": 101
+    }
+  ],
+  "increments": {
+    "captain_xPos": 82,
+    "captain_yPos": 50,
+    "label_yPos": 75,
+    "player_points_gap": -8,
+    "title_team_gap": -5
+  },
+  "meta": "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n<meta charset=\"utf-8\" />\n<title></title>\n<meta name=\"thumb\" content=\"{{shareurl}}\">\n<meta name=\"twitter:card\" content=\"summary\" />\n<meta name=\"twitter:title\" content=\"{{sharetitle}}\">\n<meta name=\"twitter:description\" content=\"{{sharedesc}}\">\n<meta name=\"twitter:image\" content=\"{{shareurl}}\">\n<meta property=\"og:image\" content=\"{{shareurl}}\" />\n<meta property=\"og:image:width\" content=\"300\" />\n<meta property=\"og:image:height\" content=\"300\" />\n<meta property=\"og:site_name\" content=\"Rajasthan Royals\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"{{sharetitle}}\" />\n<meta property=\"og:description\" content=\"{{sharedesc}}\" />\n<script type=\"text/javascript\">\nwindow.location.href = '{{siteurl}}'</script></head><body></body></html>",
+  "sharetitle": "Check out the all-new QuizzeRR!",
+  "sharedesc": "6 questions, 6 attempts. A brand-new quiz every day. Can you beat my score?",
+  "metafile": "https://www.rajasthanroyals.com/static-assets/quiz/feeds/share/graphic/meta/tags_{0}.html",
+  "imagefile": "https://www.rajasthanroyals.com/static-assets/quiz/feeds/share/graphic/images/share/{0}?v={1}",
+  "siteurl": "https://www.rajasthanroyals.com/games/quiz/home"
+}

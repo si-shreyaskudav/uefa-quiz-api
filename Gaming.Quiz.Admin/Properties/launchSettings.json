@@ -1,0 +1,29 @@
+{
+  "profiles": {
+    "Gaming.Quiz.Admin": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "games/quiz/admin",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61229;http://localhost:61231"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "games/quiz/admin",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:52958/",
+      "sslPort": 44335
+    }
+  }
+}

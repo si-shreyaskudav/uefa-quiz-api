@@ -1,0 +1,2019 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Gaming.Quiz.API",
+    "description": "The API documentation for Gaming Quiz APIs",
+    "version": "V1"
+  },
+  "paths": {
+    "/services/Feed/languages": {
+      "get": {
+        "tags": [
+          "Feed"
+        ],
+        "summary": "Returns all the available languages",
+        "parameters": [
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Feed/translations": {
+      "get": {
+        "tags": [
+          "Feed"
+        ],
+        "summary": "Returns translations",
+        "parameters": [
+          {
+            "name": "langCode",
+            "in": "query",
+            "description": "langauge code",
+            "schema": {
+              "type": "string",
+              "description": "langauge code",
+              "default": "en",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Feed/tutorial": {
+      "get": {
+        "tags": [
+          "Feed"
+        ],
+        "summary": "Returns tutorial questions",
+        "parameters": [
+          {
+            "name": "langCode",
+            "in": "query",
+            "description": "langauge code",
+            "schema": {
+              "type": "string",
+              "description": "langauge code",
+              "default": "en",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/userdetails": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/attempt": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Lang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "PlatformId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "AttemptNo",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/fifty": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "UsrAttemptId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QzQstMid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Lang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "SelectedAns",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/sneakpeak": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "OptType",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "UsrAttemptId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QzQstMid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Lang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "SelectedAns",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/switch": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "UsrAttemptId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QzQstMid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Lang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "SelectedAns",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/fetchhint": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "UsrAttemptId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QzQstMid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Lang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "SelectedAns",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/registerquestion": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QzAtmpId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QstMId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "SltdAnsOptn",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "PlatformId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "TimeSpent",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "AtmptStatus",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "ResumeAtmp",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "HintCnt",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "Lang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{quizId}/scorecard": {
+      "get": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "AttemptId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Gameplay/{userguid}/{QuizId}/settlement": {
+      "post": {
+        "tags": [
+          "Gameplay"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "AttemptId",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "PlatformId",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "QuizId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "description": "",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string",
+              "description": "",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/{userguid}/userrank": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch User Rank on leaderboard",
+        "parameters": [
+          {
+            "name": "OptType",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "MonthId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "WeekId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/{userguid}/userteamrank": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch User Player Rank on leaderboard",
+        "parameters": [
+          {
+            "name": "OptType",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "PlayerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/{userguid}/bestscoreuserrank": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch Best score User Rank on leaderboard",
+        "parameters": [
+          {
+            "name": "OptType",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "MonthId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "GamedayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "WeekId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          },
+          {
+            "name": "userguid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/overallleaderboard": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch overall Leaderboard",
+        "parameters": [
+          {
+            "name": "OptType",
+            "in": "query",
+            "description": "OptType - 1",
+            "schema": {
+              "type": "integer",
+              "description": "OptType - 1",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/teamleaderboard": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch Player overall Leaderboard",
+        "parameters": [
+          {
+            "name": "PlayerId",
+            "in": "query",
+            "description": "MonthId",
+            "schema": {
+              "type": "integer",
+              "description": "MonthId",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "OptType",
+            "in": "query",
+            "description": "OptType - 1",
+            "schema": {
+              "type": "integer",
+              "description": "OptType - 1",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/monthleaderboard": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch monthly Leaderboard",
+        "parameters": [
+          {
+            "name": "MonthId",
+            "in": "query",
+            "description": "MonthId",
+            "schema": {
+              "type": "integer",
+              "description": "MonthId",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "OptType",
+            "in": "query",
+            "description": "OptType - 1",
+            "schema": {
+              "type": "integer",
+              "description": "OptType - 1",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/bestscoreleaderboard": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch gloabl Leaderboard",
+        "parameters": [
+          {
+            "name": "MonthId",
+            "in": "query",
+            "description": "MonthId",
+            "schema": {
+              "type": "integer",
+              "description": "MonthId",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "OptType",
+            "in": "query",
+            "description": "OptType - 1",
+            "schema": {
+              "type": "integer",
+              "description": "OptType - 1",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Leaderboard/getmonth": {
+      "get": {
+        "tags": [
+          "Leaderboard"
+        ],
+        "summary": "API to fetch User Rank on leaderboard",
+        "parameters": [
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "Debug param",
+            "schema": {
+              "type": "string",
+              "description": "Debug param",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/ping/status": {
+      "get": {
+        "tags": [
+          "Ping"
+        ],
+        "summary": "API Status check",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/services/ping/swagger": {
+      "get": {
+        "tags": [
+          "Ping"
+        ],
+        "summary": "Generates swagger documentation locally. Available only in Debug mode.",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/services/Session/login": {
+      "post": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "SocialId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          {
+            "name": "backdoor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Session/anonymouslogin": {
+      "post": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "backdoor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Credentials"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Session/user/login": {
+      "post": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "waf_guid",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "nullable": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/services/Share/generate": {
+      "post": {
+        "tags": [
+          "Share"
+        ],
+        "summary": "Generates Share Image.",
+        "parameters": [
+          {
+            "name": "backdoor",
+            "in": "query",
+            "description": "backdoor",
+            "schema": {
+              "type": "string",
+              "description": "backdoor",
+              "nullable": true
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "The GUID of the user",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShareModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShareModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShareModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShareModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FeedTime": {
+        "type": "object",
+        "properties": {
+          "utcTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "istTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "cestTime": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HTTPMeta": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "retVal": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "success": {
+            "type": "boolean"
+          },
+          "timestamp": {
+            "$ref": "#/components/schemas/FeedTime"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HTTPResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/HTTPMeta"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Credentials": {
+        "type": "object",
+        "properties": {
+          "optType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "platformId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "socialId": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "countryCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "profilePicture": {
+            "type": "string",
+            "nullable": true
+          },
+          "dob": {
+            "type": "string",
+            "nullable": true
+          },
+          "userCreatedDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ShareModel": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "rightAns": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalQtn": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totPoints": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "streakCnt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "qsnStreak": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "correctAns": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "platformId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lang": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "percentile": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

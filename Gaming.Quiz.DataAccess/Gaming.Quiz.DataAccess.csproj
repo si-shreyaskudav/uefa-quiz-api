@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Quiz.Contracts\Gaming.Quiz.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.DataInitializer\Gaming.Quiz.DataInitializer.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Interfaces\Gaming.Quiz.Interfaces.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Library\Gaming.Quiz.Library.csproj" />
+  </ItemGroup>
+
+</Project>

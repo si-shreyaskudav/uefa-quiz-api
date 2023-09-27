@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Swapnil\publish\Admin-Quiz\Nginx\Gaming.Quiz.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp3.1\Dream11.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\LoadTest\**" />
+    <Compile Remove="Controllers\Settings\**" />
+    <Compile Remove="Controllers\Share\**" />
+    <Content Remove="Controllers\LoadTest\**" />
+    <Content Remove="Controllers\Settings\**" />
+    <Content Remove="Controllers\Share\**" />
+    <EmbeddedResource Remove="Controllers\LoadTest\**" />
+    <EmbeddedResource Remove="Controllers\Settings\**" />
+    <EmbeddedResource Remove="Controllers\Share\**" />
+    <None Remove="Controllers\LoadTest\**" />
+    <None Remove="Controllers\Settings\**" />
+    <None Remove="Controllers\Share\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\swagger\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Quiz.Blanket\Gaming.Quiz.Blanket.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Contracts\Gaming.Quiz.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Interfaces\Gaming.Quiz.Interfaces.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Library\Gaming.Quiz.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Packaging.Targets" Version="0.1.56" />
+  </ItemGroup>
+
+</Project>

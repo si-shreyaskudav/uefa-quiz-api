@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.App">
+			<PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+			<Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Quiz.Blanket\Gaming.Quiz.Blanket.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Contracts\Gaming.Quiz.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Interfaces\Gaming.Quiz.Interfaces.csproj" />
+    <ProjectReference Include="..\Gaming.Quiz.Library\Gaming.Quiz.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Packaging.Targets" Version="0.1.56" />
+  </ItemGroup>
+
+</Project>

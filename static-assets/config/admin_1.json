@@ -1,0 +1,49 @@
+{
+  "Authorization": [
+    {
+      "User": "vongola",
+      "Password": "zeropoint",
+      "Pages": [
+        "Data Population",
+        "Feed Ingestion",
+        "Translation",
+        "Daemon Config",
+        "Admin Config",
+        "App Config",
+        "Constraints Config",
+        "Show Config",
+        "Template",
+        "Player Recom",
+        "Notification",
+        "Points Calculation",
+        "Share",
+        "Analytics"
+      ]
+    },
+    {
+      "User": "analytics",
+      "Password": "0ff$!dE",
+      "Pages": [
+        "Analytics"
+      ]
+    }
+  ],
+  "Translation": {
+    "ProjectGroupId": "76262",
+    "PlatformId": {
+      "Web": "1#168317",
+      "iOS": "2#168319",
+      "Android": "3#168322"
+    },
+    "ClientId": [
+      "1#fantasy",
+      "2#fifa",
+      "3#ea"
+    ]
+  },
+  "PriceFilter": {
+    "Max": "13",
+    "Min": "4.5"
+  },
+  "TemplateUri": "http://{0}.competitions.uefa.com/thirdparties/template/uefachampionsleague/games/"
+}

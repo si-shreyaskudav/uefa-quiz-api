@@ -1,0 +1,32 @@
+{
+    "Value": [ 
+        {
+            "CompId": 3,
+            "GK": 1,
+            "DEF": 4,
+            "MID": 3,
+            "FWD": 3,
+            "Manager": 0,
+            "IsDefault": 0,
+            "RandomPly": 0,
+            "IsActive": 1,
+            "CompositionOrder": ""
+        },
+        {
+            "CompId": 4,
+            "GK": 1,
+            "DEF": 4,
+            "MID": 4,
+            "FWD": 2,
+            "Manager": 0,
+            "IsDefault": 1,
+            "RandomPly": 0,
+            "IsActive": 1,
+            "CompositionOrder": ""
+        }
+    ],
+    "FeedTime": {
+        "UTCtime": "8/22/2019 10:08:17 AM",
+        "ISTtime": "22-08-2019 15:38:17"
+    }
+}
