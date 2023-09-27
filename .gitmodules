@@ -1,0 +1,3 @@
+[submodule "TestingHub.API"]
+	path = TestingHub.API
+	url = https://github.com/si-shreyaskudav/TestingHub.API.git
