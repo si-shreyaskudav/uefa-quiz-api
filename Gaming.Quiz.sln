@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deamons", "Deamons", "{B634
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gaming.Quiz.BGServices", "Daemons\Gaming.Quiz.BGServices\Gaming.Quiz.BGServices.csproj", "{F2229FFE-C77B-4547-ACB6-26E6257F7585}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestingHub.API", "TestingHub.API", "{99450642-0040-4487-81D5-EA44FD228D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingHub.API", "TestingHub.API\TestingHub.API\TestingHub.API.csproj", "{BDBCFBD9-3A55-461F-87FB-ADDC07FC817A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,12 +75,17 @@ Global
 		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2229FFE-C77B-4547-ACB6-26E6257F7585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDBCFBD9-3A55-461F-87FB-ADDC07FC817A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBCFBD9-3A55-461F-87FB-ADDC07FC817A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBCFBD9-3A55-461F-87FB-ADDC07FC817A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBCFBD9-3A55-461F-87FB-ADDC07FC817A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F2229FFE-C77B-4547-ACB6-26E6257F7585} = {B6348D20-ACB1-4835-95A8-DD99D169C81A}
+		{BDBCFBD9-3A55-461F-87FB-ADDC07FC817A} = {99450642-0040-4487-81D5-EA44FD228D84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {761AC72B-B012-43AD-B04B-44EB4DC5303A}
